@@ -49,7 +49,10 @@ const sendMessage = asyncHandler(async (req, res) => {
     //to update the message by the latest message
     await Chat.findByIdAndUpdate(req.body.chatId, { latestMessage: message });
 
-    res.json(message);
+    res.json({
+      ...message.toJSON(),
+      createdAt: new Date(message.createdAt).toLocaleString(),
+    });
   } catch (error) {
     res.status(400);
     throw new Error(error.message);

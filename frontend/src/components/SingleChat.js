@@ -55,6 +55,9 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         config
       );
       setMessages(data);
+      console.log(data)
+
+      
       setLoading(false);
 
       socket.emit("join chat", selectedChat._id);

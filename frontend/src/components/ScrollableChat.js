@@ -45,6 +45,17 @@ const ScrollableChat = ({ messages }) => {
               }}
             >
               {m.content}
+              
+                <span
+                  style={{
+                    fontSize: "0.8em",  // Adjust the font size as needed
+                    color: "gray",      // Adjust the color as needed
+                    display: "block",    // Ensure the timestamp is on a new line
+                    marginTop: "5px",    // Adjust the spacing between message and timestamp
+                  }}
+                >
+                  {new Date(m.createdAt).toLocaleString([], { hour12: true, year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' })}
+                </span>
             </span>
           </div>
         ))}
