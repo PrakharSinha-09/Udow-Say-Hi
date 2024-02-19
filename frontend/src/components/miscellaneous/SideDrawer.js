@@ -147,8 +147,8 @@ function SideDrawer() {
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
-          <i><b><p> Udow : Say Hi!</p></b></i>
+        <Text fontSize="2xl" fontFamily="cursive" color={""}>
+          <b><p> Udow : Say Hi!👋</p></b>
         </Text>
         <div>
           <Menu>
