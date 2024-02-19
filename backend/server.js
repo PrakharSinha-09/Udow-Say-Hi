@@ -26,7 +26,7 @@ app.use("/api/message", messageRoutes);
 // --------------------------deployment------------------------------
 
 const __dirname1 = path.resolve();
-
+console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname1, "/frontend/build")));
 
@@ -45,7 +45,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(notFound);
 app.use(errorHandler);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const server = app.listen(
   PORT,
