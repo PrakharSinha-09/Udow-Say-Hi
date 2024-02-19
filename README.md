@@ -6,6 +6,7 @@ Uses Socket.io for real time communication and stores user details in encrypted 
 ## Tech Stack
 
 **Client:** React JS
+
 **UI** Chakra UI
 
 **Server:** Node JS, Express JS
@@ -20,14 +21,11 @@ Uses Socket.io for real time communication and stores user details in encrypted 
 Clone the project
 
 ```bash
-  git clone https://github.com/piyush-eon/mern-chat-app
+  git clone https://github.com/PrakharSinha-09/Chat-App.git
 ```
 
 Go to the project directory
 
-```bash
-  cd mern-chat-app
-```
 
 Install dependencies
 
@@ -56,5 +54,12 @@ Start the Client
   
 # Features
 
+👉with the help of websockets, real time chat is made possible
+
+👉It has the functionality of group chats and only admin can add or remove the person!
+
+👉When user is typing, it could be seen on the other person chat, to whom he/she is chatting.
+
+👉when any message arrives, there is a notification bell as well, which shows the count of chats whose messages are not seen or viewed yet.
 
   
