@@ -62,8 +62,6 @@ Start the Client
 
 👉when any message arrives, there is a notification bell as well, which shows the count of chats whose messages are not seen or viewed yet.
 
-👉there is a guest user support as well
-
 👉logged in user can search for other users as well, who have their accounts with Udow.
 
   
