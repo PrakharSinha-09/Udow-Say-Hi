@@ -56,7 +56,9 @@ const Login = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
       history.push("/chats");
-      window.location.reload()
+      setTimeout(()=>{
+        window.location.reload()
+      },1000)
     } catch (error) {
       toast({
         title: "Error Occured!",
